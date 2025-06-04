@@ -18,7 +18,7 @@ public class A3 {
             System.out.println("Não estamos funicoando no momento ");
             break;
             case 3:
-            System.out.println("ai papai");
+            System.out.println("Ok começaremos os procedimentos");
             break;
             case 4:
             fufando = false;
