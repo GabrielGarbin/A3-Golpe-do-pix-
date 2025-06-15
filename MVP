@@ -1,0 +1,24 @@
+MVP – Simulador de Resposta Bancária após Golpe via Pix
+Descrição
+Este MVP simula como um banco responde após uma vítima registrar um golpe via Pix. Ele representa o processo pós-fraude, baseado em práticas reais do sistema financeiro.
+
+Objetivo
+Demonstrar de forma simples e interativa como ocorre o registro, análise e tratamento de uma transação suspeita de golpe.
+
+Funcionalidades
+Registro do golpe: usuário informa seu CPF e o do golpista.
+
+Análise da transação: exibe dados como valor, data, tipo e CPFs envolvidos.
+
+Identificação do golpista: o sistema rastreia e contabiliza denúncias por CPF.
+
+Verificação de conta usada: impede estorno se o CPF do golpista for igual ao da vítima.
+
+Resposta simulada do banco: mostra o andamento do caso e bloqueia contas com 3 denúncias.
+
+Diferenciais
+Persistência de dados via arquivo
+
+Lógica realista baseada em práticas do setor bancário
+
+Estrutura modular com classes Java organizadas (cliente, transação, retorno)
