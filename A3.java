@@ -26,6 +26,7 @@ public class A3 {
             System.out.println("1 - Atendimento ao cliente");
             System.out.println("2 - Transferência não funcionando");
             System.out.println("3 - Denúncia de golpe");
+            System.out.println("4 - Resetar denúncias");
             System.out.println("0 - Sair");
 
             int Numero = sc.nextInt(); // Lê o número escolhido pelo usuário
@@ -112,6 +113,11 @@ public class A3 {
                     System.out.println("CPF do Pagador: " + Cpf + " " + nomeCliente);
                     System.out.println("CPF do Recebedor: " + CpfGolpista2 + " " + nomeGolpista2);
                     break;
+                case 4:
+                    contadorDenuncias.clear();
+                    saveDenuncias(contadorDenuncias);
+                    System.out.println("Denúncias resetadas com sucesso.");
+                    break;
                 case 0:
                     running = false;
                     System.out.println("Obrigado pela paciência!");
@@ -143,3 +149,4 @@ public class A3 {
         }
     }
 }
+
