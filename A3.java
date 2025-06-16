@@ -80,7 +80,14 @@ public class A3 {
                         System.out.println("A conta do CPF " + CpfGolpista + " foi bloqueada devido a múltiplas denúncias.");
                         System.exit (0);
                     }
-                            // detalhes da Transação 
+                    for (int i = 0; i < 4 ; i++) { // Contador de 4 segundos 
+                        System.out.println("("+ i+")");
+                         try {
+                             Thread.sleep(1000); // Espera 1 segundo
+                         }  catch (InterruptedException e) {
+                        }
+                    }
+                            // Detalhes da Transação 
                     System.out.println("\nDetalhes da transação:");
                     System.out.println("ID: " + transacao.getId());
                     System.out.println("Descrição: " + transacao.getDescricao());
@@ -104,6 +111,13 @@ public class A3 {
                         nomeGolpista2 = clientes.getNome3();
                     } else {
                         nomeGolpista2 = "CPF não encontrado";
+                    }
+                    for (int i = 0; i < 4 ; i++) { // Contador de 4 segundos
+                        System.out.println("("+ i+")");
+                         try {
+                             Thread.sleep(1000); // Espera 1 segundo 
+                         }  catch (InterruptedException e) {
+                        }
                     }
                         // Detalhes do extorno
                     System.out.println("\nDetalhes do extorno da transação:");
@@ -149,4 +163,3 @@ public class A3 {
         }
     }
 }
-
