@@ -1,24 +1,83 @@
-MVP – Simulador de Resposta Bancária após Golpe via Pix
-Descrição
-Este MVP simula como um banco responde após uma vítima registrar um golpe via Pix. Ele representa o processo pós-fraude, baseado em práticas reais do sistema financeiro.
+MVP – Simulador de Denúncia de Golpe via Pix
 
-Objetivo
-Demonstrar de forma simples e interativa como ocorre o registro, análise e tratamento de uma transação suspeita de golpe.
+1. Problema que o MVP resolve
 
-Funcionalidades
-Registro do golpe: usuário informa seu CPF e o do golpista.
+Golpes financeiros realizados por meio do Pix têm aumentado significativamente. Após ser vítima, o cliente muitas vezes não sabe como agir e não há um sistema automatizado de resposta imediata. Além disso, instituições bancárias precisam de um mecanismo ágil para identificar contas suspeitas e evitar novas fraudes.
 
-Análise da transação: exibe dados como valor, data, tipo e CPFs envolvidos.
 
-Identificação do golpista: o sistema rastreia e contabiliza denúncias por CPF.
+---
 
-Verificação de conta usada: impede estorno se o CPF do golpista for igual ao da vítima.
+2. Solução proposta
 
-Resposta simulada do banco: mostra o andamento do caso e bloqueia contas com 3 denúncias.
+Este MVP propõe um sistema simples, em ambiente de console, que simula o atendimento de um banco após um cliente sofrer um golpe via Pix. Ele permite registrar uma denúncia, analisar a recorrência de denúncias contra o mesmo CPF, simular o bloqueio da conta do golpista e realizar um estorno simbólico ao cliente.
 
-Diferenciais
-Persistência de dados via arquivo
 
-Lógica realista baseada em práticas do setor bancário
+---
 
-Estrutura modular com classes Java organizadas (cliente, transação, retorno)
+3. Funcionalidades principais
+
+Menu interativo:
+O usuário é apresentado a um menu com opções de atendimento, transferência não funcionando denúncia de golpe, reset de denúncias, estorno e sair (disponível após denúncia).
+
+Denúncia de golpe:
+O cliente informa seu CPF e o do golpista. O sistema verifica os dados e registra a denúncia. Cada denúncia é armazenada com persistência, aumentando a contagem associada ao CPF do suposto golpista.
+
+Bloqueio automático de conta:
+Se o mesmo CPF for denunciado três vezes, o sistema bloqueia automaticamente essa conta, simulando uma ação preventiva do banco.
+
+Simulação de transação:
+Após a denúncia, o sistema exibe os dados simulados da transação realizada entre o cliente e o golpista (valor, data, tipo de operação).
+
+Simulação de estorno:
+Após a denúncia, o cliente pode solicitar o estorno. O sistema simula a análise da transação e apresenta os dados do estorno, devolvendo simbolicamente o valor ao CPF da vítima.
+
+Persistência dos dados:
+A contagem de denúncias por CPF é armazenada em um arquivo no disco. Isso garante que os dados não sejam perdidos após o encerramento do programa.
+
+
+---
+
+4. Tecnologias utilizadas
+
+Linguagem Java
+
+Console como interface de usuário
+
+Estrutura de dados HashMap para contagem de denúncias
+
+Armazenamento em arquivo binário usando serialização (ObjectOutputStream)
+
+
+
+---
+
+5. Fluxo de uso
+
+1. O usuário acessa o menu e escolhe "Denúncia de golpe".
+
+
+2. Informa seu CPF e o CPF do golpista.
+
+
+3. O sistema registra a denúncia e atualiza o contador.
+
+
+4. Se o CPF do golpista atingir 3 denúncias, a conta é bloqueada.
+
+
+5. O cliente pode então solicitar o estorno da quantia.
+
+
+6. O sistema mostra os dados da transação e do estorno simulados.
+
+
+7. As denúncias permanecem salvas até serem resetadas.
+
+
+
+
+---
+
+6. Validação do MVP
+
+Este MVP permite validar a ideia de um sistema automatizado de resposta a golpes via Pix. É simples, funcional e serve como base para testes, feedback e desenvolvimento de versões mais completas com interface gráfica, autenticação, e integração com banco de dados.
