@@ -12,15 +12,15 @@ A3 de programação de software
 
     Com base nas últimas atualizações, o programa agora inclui os seguintes comportamentos:
 
-    ⏳ Timer de Visualização:** Ao exibir os detalhes de uma transação (seja a original ou o retorno do dinheiro), 
-    o sistema agora implementa um **timer de 4 segundos. Isso garante que o usuário tenha tempo suficiente para 
-    ler e analisar as informações antes de prosseguir.
+    ⏳ Timer de Visualização: Ao exibir os detalhes de uma transação (seja a original ou o retorno
+    do dinheiro), o sistema agora implementa um **timer de 4 segundos. Isso garante que o usuário 
+    tenha tempo suficiente para ler e analisar as informações antes de prosseguir.
     
-    🏦 Opção de Estorno: Após a conclusão de uma denúncia de golpe, o programa apresenta uma nova opção que 
-    permite ao usuário solicitar o estorno diretamente ao banco.
+    🏦 Opção de Estorno: Após a conclusão de uma denúncia de golpe, o programa apresenta uma nova 
+    opção que permite ao usuário solicitar o estorno diretamente ao banco.
     
-    🚫 Validação de CPF: Para aumentar a robustez, caso um CPF não existente na base de dados seja digitado 
-    em qualquer etapa, o **programa será finalizado** para evitar operações com dados inválidos.
+    🚫 Validação de CPF: Para aumentar a robustez, caso um CPF não existente na base de dados seja 
+    digitado em qualquer etapa, o "programa será finalizado" para evitar operações com dados inválidos.
     
                            ### Pré-requisitos ###
 
