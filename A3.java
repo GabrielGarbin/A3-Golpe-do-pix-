@@ -28,7 +28,7 @@ public class A3 {
             System.out.println("2 - Transferência não funcionando");
             System.out.println("3 - Denúncia de golpe");
             if (found) {
-             System.out.println("5 - Extorno do banco");
+             System.out.println("5 - Estorno do banco");
         }
             System.out.println("4 - Resetar denúncias");
             System.out.println("0 - Sair");
@@ -143,7 +143,7 @@ public class A3 {
                     System.out.println("Denúncias resetadas com sucesso."); 
                     break;
                 case 5:
-                // Pede o CPF para extorno do dinheiro
+                // Pede o CPF para Estorno do dinheiro
             System.out.println("\nDigite seu CPF:");
                     int Cpf1 = sc.nextInt();
                     String nomeCliente1 = "";
@@ -164,13 +164,13 @@ public class A3 {
                          }  catch (InterruptedException e) {
                         }
                     }
-                        // Detalhes do extorno
-                    System.out.println("\nDetalhes do extorno da transação:");
+                        // Detalhes do Estorno
+                    System.out.println("\nDetalhes do estorno da transação:");
                     System.out.println("Valor: " + retorno.getValor());
                     System.out.println("Tipo: " + retorno.getTipo());
                     System.out.println("Data: " + retorno.getData());
-                    System.out.println("CPF do Recebedor do Extorno: " + Cpf1 + " " + nomeCliente1);
-                    System.out.println("\n Extorno realizado pelo banco");
+                    System.out.println("CPF do Recebedor do Estorno: " + Cpf1 + " " + nomeCliente1);
+                    System.out.println("\n Estorno realizado pelo banco");
                     break;
                     case 0:
                     running = false; // Sai do loop
