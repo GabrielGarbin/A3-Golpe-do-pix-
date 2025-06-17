@@ -106,12 +106,13 @@ public class A3 {
                     System.out.println("CPF do Recebedor: " + Cpf + " " + nomeCliente);
                               
                     // Pede o CPF que o cliente vai mandar o dinheiro
-                    System.out.println("\n" + nomeCliente + " Qual o CPF que você deseja mandar o dinheiro");
+                    System.out.println("\n" + nomeCliente + " Qual o CPF que você  mandou o dinheiro");
                     int CpfGolpista2 = sc.nextInt();
                     String nomeGolpista2 = "";
                     if (CpfGolpista2 == Cpf) { // Procuara o nome do cliente pelo CPF
                         nomeGolpista2 = "não pode ser o mesmo";
-                        System.out.println("Não pode ser realizada o estorno");
+                        System.out.println("Não foi encontrada a transferência");
+                        System.exit(0);
                     } else if (CpfGolpista2 == clientes.getCpf1()) {
                         nomeGolpista2 = clientes.getNome1();
                     } else if (CpfGolpista2 == clientes.getCpf2()) {
