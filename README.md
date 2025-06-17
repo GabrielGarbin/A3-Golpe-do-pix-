@@ -100,9 +100,9 @@ A3 de programação de software
     Rastreamento do Dinheiro (Retorno da Transação):
     O sistema então exibe os Detalhes do retorno da transação.
     
-                      O sistema pede para o usuário digitar o cpf que vai ser realizado o extorno, o sistema não aceita o cpf do usuário 
+                      O sistema pede para o usuário digitar o cpf que vai ser realizado a transferênica, o sistema não aceita o cpf do usuário 
     
-    No entanto, em vez de um simples estorno, ele mostra uma análise mais complexa do fluxo do dinheiro:
+    No entanto, em vez de uma simples transferência, ele mostra uma análise mais complexa do fluxo do dinheiro:
     Valor: 150.75 (o mesmo valor)
     Tipo: Pix
     Data: 07-08-2025
