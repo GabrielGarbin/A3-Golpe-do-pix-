@@ -22,6 +22,10 @@ A3 de programação de software
     🚫 Validação de CPF: Para aumentar a robustez, caso um CPF não existente na base de dados seja 
     digitado em qualquer etapa, o "programa será finalizado" para evitar operações com dados inválidos.
     
+    🔄 Reset da Simulação:** Foi adicionada a opção **"Resetar denúncias"**, que permite limpar os dados 
+    da simulação atual. Isso facilita a realização de novos testes do zero, sem a necessidade de fechar 
+    e reabrir o programa.
+    
                            ### Pré-requisitos ###
 
     Java Development Kit (JDK): É necessário ter o JDK (versão 8 ou superior) 
@@ -71,12 +75,14 @@ A3 de programação de software
     
     Seleção da Opção:
 
-    O programa inicia apresentando um menu com quatro opções:
+    O programa inicia apresentando um menu com 5 opções:
 
-    Atendimento ao cliente, 
-    Transferência não funcionando, 
-    Denúncia de golpe
-    Sair.
+    1 - Atendimento ao cliente
+    2 - Transferência não funcionando
+    3 - Denúncia de golpe
+    4 - Estorno do banco
+    5 - Resetar Denúncias
+    0 - Sair.
 
     O usuário digita 3 
 
@@ -114,7 +120,8 @@ A3 de programação de software
     Rastreamento do Dinheiro (Retorno da Transação):
     O sistema então exibe os Detalhes do retorno da transação.
     
-                      O sistema pede para o usuário digitar o cpf que vai ser realizado a transferênica, o sistema não aceita o cpf do usuário 
+        O sistema pede para o usuário digitar o cpf que vai ser realizado a transferência,
+        o sistema não aceita o cpf do usuário 
     
     No entanto, em vez de uma simples transferência, ele mostra uma análise mais complexa do fluxo do dinheiro:
     Valor: 150.75 (o mesmo valor)
@@ -127,8 +134,22 @@ A3 de programação de software
     que a vítima (Maria Santos) transferiu o valor recebido 
     para uma terceira conta (CPF 3), caracterizando uma possível triangulação 
     de golpe para dificultar a recuperação dos fundos.
+    
+    -- Ação Pós-Denúncia: Solicitação de Estorno: --
+    
+    Após analisar o golpe, o programa retorna ao menu. Agora, para simular a resolução do problema, o usuário
+    seleciona a opção `5 - Estorno do banco`. O sistema solicita o CPF para o qual o estorno deve ser
+    direcionado (o pagador original). O usuário insere o CPF `1` (Jorge Silva).O programa confirma a operação,
+    exibindo os detalhes do estorno e a mensagem `Estorno realizado pelo banco`. Esta etapa simula a ação do
+    banco revertendo a transação original após a comprovação do golpe.
 
-    Conclusão do Ciclo:
+    -- Conclusão do Ciclo e Resumo da Simulação: --
+    
+    Neste ponto, o ciclo completo da simulação foi concluído. O usuário não apenas **identificou a fraude**
+    e visualizou a triangulação do dinheiro, mas também **simulou a ação corretiva** ao solicitar o estorno bancário.
+    Com todas as etapas demonstradas, o usuário pode agora selecionar a opção `0 - Sair` para finalizar a execução
+    do programa, que se despede com a mensagem "Obrigado pela paciência!".
+    
     Após exibir todas as informações relevantes sobre o golpe, o programa 
     retorna ao menu principal, ficando pronto para uma nova operação.
 
