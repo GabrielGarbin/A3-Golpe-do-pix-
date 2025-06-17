@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.HashMap;
 import java.io.*;
@@ -29,7 +28,7 @@ public class A3 {
             System.out.println("2 - Transferência não funcionando");
             System.out.println("3 - Denúncia de golpe");
             if (found) {
-             System.out.println("5- Extorno do banco");
+             System.out.println("5 - Extorno do banco");
         }
             System.out.println("4 - Resetar denúncias");
             System.out.println("0 - Sair");
