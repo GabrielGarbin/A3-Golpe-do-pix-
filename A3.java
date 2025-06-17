@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 import java.util.HashMap;
 import java.io.*;
@@ -178,10 +179,10 @@ public class A3 {
                     break;
                 default: // Caso o usuário digite uma opção inválida
                     System.out.println("Opção inválida");
+                    sc.close();
             }
         }      
         }
-
                         // Contador de denuncias 
     private static HashMap<Integer, Integer> loadDenuncias() {
         HashMap<Integer, Integer> map = new HashMap<>();
